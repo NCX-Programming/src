@@ -2,19 +2,15 @@
   bin: CSharpCollection-v1.0-bin.zip
   src: CSharpCollection-v1.0-source.zip
   date: 2020-05-23
-  platform: W
 - name: 1
   bin: CSharpCollection-v1.1-bin.zip
   src: CSharpCollection-v1.1-source.zip
   date: 2020-06-03
-  platform: W
 - name: 2
   bin: CSharpCollection-v1.2-bin.zip
   src: CSharpCollection-v1.2-source.zip
   date: 2020-06-05
-  platform: W
 - name: 3
   bin: CSharpCollection-v1.3-bin.zip
   src: CSharpCollection-v1.3-source.zip
   date: 2020-06-06
-  platform: W
