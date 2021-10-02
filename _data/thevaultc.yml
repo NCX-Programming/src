@@ -1,0 +1,15 @@
+- name: 1
+  date: 2021-02-24
+  platform: L, W
+- name: 2
+  date: 2021-02-24
+  platform: M, L, W
+- name: 3
+  date: 2021-02-25
+  platform: M, L, W
+- name: 4
+  date: 2021-06-17
+  platform: M, L, W
+- name: 5
+  date: 2021-08-19
+  platform: M, L, W

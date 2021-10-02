@@ -3,16 +3,12 @@ title: theVaultC
 layout: default
 ---
 
-<h1>List of sources for fake-apt</h1>
+<h1>List of sources for theVaultC</h1>
 <p>Since theVaultC doesn't have normal version numbers, these are the sources that correspond with releases. A version.txt file is included that says what versions of theVaultC programs the source is for.</p>
 <p>Versions that the code compiles for are marked by [M] macOS, [L] Linux, and [W] Windows</p>
-<p><a href="/">&lt;- Back</a></p>
+<p><a href="javascript:window.history.back()">&lt;- Back</a></p>
 <hr>
-<h4>2021-02-24 - Release 1 - <a href=/source/theVaultC/all/theVaultC-r1-source.zip>theVaultC-r1-source.zip</a> | <a href=/source/theVaultC/all/theVaultC-r1-bin.zip>Binaries</a> [L] [W] (Released as Release 1)</h4>
-<hr>
-<h4>2021-02-24 - Release 2 - <a href=/source/theVaultC/all/theVaultC-r2-source.zip>theVaultC-r2-source.zip</a> | <a href=/source/theVaultC/all/theVaultC-r2-bin.zip>Binaries</a> [M] [L] [W] (Released as Release 2)</h4>
-<hr>
-<h4>2021-02-25 - Release 3 - <a href=/source/theVaultC/all/theVaultC-r3-source.zip>theVaultC-r3-source.zip</a> | <a href=/source/theVaultC/all/theVaultC-r3-bin.zip>Binaries</a> [M] [L] [W] (Released as Release 3)</h4>
-<hr>
-<h4>2021-06-17 - Release 4 - <a href=/source/theVaultC/all/theVaultC-r4-source.zip>theVaultC-r4-source.zip</a> | <a href=/source/theVaultC/all/theVaultC-r4-bin.zip>Binaries</a> [M] [L] [W] (Released as Release 4)</h4>
-<hr>
+{% for item in site.data.thevaultc %}
+  <h4>{{ item.date }} - Release {{ item.name }} - <a href="/source/theVaultC/all/theVaultC-r{{ item.name }}-source.zip">theVaultC-r{{ item.name }}-source.zip</a> | <a href="/source/theVaultC/all/theVaultC-r{{ item.name }}-bin.zip">Binaries</a> [{{ item.platform }}] (Released as Release {{ item.name }})</h4>
+  <hr>
+{% endfor %}
