@@ -6,21 +6,9 @@ layout: default
 <h1>List of sources for CSharpCollection v2</h1>
 <p>This directory contains the source code for all 2.X releases of the CSharpCollection</p>
 <p>Versions that the code compiles for are marked by [M] macOS, [L] Linux, and [W] Windows</p>
-<p><a href=/source/CSharpCollection>&lt;- Back</a></p>
+<p><a href="javascript:window.history.back()">&lt;- Back</a></p>
 <hr>
-<h4>2020-06-08 - v2.0 - <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.0-source.zip>CSharpCollection-v2.0-source.zip</a> | <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.0-bin.zip>Binaries</a> [W] (Released as v2.0)</h4>
-<hr>
-<h4>2020-06-12 - v2.1 - <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.1-source.zip>CSharpCollection-v2.1-source.zip</a> | <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.1-bin.zip>Binaries</a> [W] (Released as v2.1)</h4>
-<hr>
-<h4>2020-06-13 - v2.2 - <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.2-source.zip>CSharpCollection-v2.2-source.zip</a> | <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.2-bin.zip>Binaries</a> [W] (Released as v2.2)</h4>
-<hr>
-<h4>2020-06-14 - v2.3 - <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.3-source.zip>CSharpCollection-v2.3-source.zip</a> | <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.3-bin.zip>Binaries</a> [W] (Released as v2.3)</h4>
-<hr>
-<h4>2020-06-15 - v2.4 - <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.4-source.zip>CSharpCollection-v2.4-source.zip</a> | <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.4-bin.zip>Binaries</a> [W] (Released as v2.4)</h4>
-<hr>
-<h4>2020-06-24 - v2.5 - <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.5-source.zip>CSharpCollection-v2.5-source.zip</a> | <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.5-bin.zip>Binaries</a> [W] (Released as v2.5)</h4>
-<hr>
-<h4>2020-06-27 - v2.6 - <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.6-source.zip>CSharpCollection-v2.6-source.zip</a> | <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.6-bin.zip>Binaries</a> [W] (Released as v2.6)</h4>
-<hr>
-<h4>2020-08-19 - v2.7 - <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.7-source.zip>CSharpCollection-v2.7-source.zip</a> | <a href=/source/CSharpCollection/2.X/CSharpCollection-v2.7-setup.msi>Binaries</a> [W] (Released as v2.7)</h4>
-<hr>
+{% for item in site.data.csharpcollectionv2 %}
+  <h4>{{ item.date }} - v2.{{ item.name }} - <a href="/source/CSharpCollection/2.X/CSharpCollection-v2.{{ item.name }}-source.zip">CSharpCollection-v2.{{ item.name }}-source.zip</a> | <a href="/source/CSharpCollection/2.X/CSharpCollection-v2.{{ item.name }}-bin.zip">Binaries</a> [{{ item.platform }}] (Released as v2.{{ item.name }})</h4>
+  <hr>
+{% endfor %}
