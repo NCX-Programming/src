@@ -13,3 +13,6 @@
 - name: 5
   date: 2021-08-19
   platform: M, L, W
+- name: 6
+  date: 2021-10-07
+  platform: M, L, W
