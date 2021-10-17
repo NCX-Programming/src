@@ -8,7 +8,9 @@ layout: default
 <p>Versions that the code compiles for are marked by [M] macOS, [L] Linux, and [W] Windows</p>
 <p><a href="javascript:window.history.back()">&lt;- Back</a></p>
 <hr>
-{% for item in site.data.csharpcollectionv2 %}
-  <h4>{{ item.date }} - v2.{{ item.name }} - <a href="/source/CSharpCollection/2.X/CSharpCollection-v2.{{ item.name }}-source.zip">CSharpCollection-v2.{{ item.name }}-source.zip</a> | <a href="/source/CSharpCollection/2.X/CSharpCollection-v2.{{ item.name }}-bin.zip">Binaries</a> (Released as v2.{{ item.name }})</h4>
-  <hr>
+{% for item in site.data.csharpcollection %}
+  {% if item.major == 2 %}
+    <h4>{{ item.date }} - v2.{{ item.minor }} - <a href="/source/CSharpCollection/2.X/CSharpCollection-v2.{{ item.minor }}-source.zip">CSharpCollection-v2.{{ item.minor }}-source.zip</a> | <a href="/source/CSharpCollection/2.X/CSharpCollection-v2.{{ item.minor }}-bin.zip">Binaries</a> (Released as v2.{{ item.minor }})</h4>
+    <hr>
+  {% endif %}
 {% endfor %}
