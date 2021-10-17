@@ -8,7 +8,9 @@ layout: default
 <p>NCX-Core only compiles for Windows</p>
 <p><a href="javascript:window.history.back()">&lt;- Back</a></p>
 <hr>
-{% for item in site.data.ncxcorev1 %}
-  <h4>{{ item.date }} - v1.{{ item.name }} - <a href="/source/NCX-Core/1.X/NCX-Core-v1.{{ item.name }}-source.zip">NCX-Core-v1.{{ item.name }}-source.zip</a> | <a href="/source/NCX-Core/1.X/NCX-Core-v1.{{ item.name }}-setup.msi">Binaries</a> (Released as v1.{{ item.name }})</h4>
-  <hr>
+{% for item in site.data.ncxcore %}
+  {% if item.major == 1 %}
+    <h4>{{ item.date }} - v1.{{ item.minor }} - <a href="/source/NCX-Core/1.X/NCX-Core-v1.{{ item.minor }}-source.zip">NCX-Core-v1.{{ item.minor }}-source.zip</a> | <a href="/source/NCX-Core/1.X/NCX-Core-v1.{{ item.minor }}-setup.msi">Binaries</a> (Released as v1.{{ item.minor }})</h4>
+    <hr>
+  {% endif %}
 {% endfor %}
