@@ -10,6 +10,8 @@ layout: default
 <p><a href="javascript:window.history.back()">&lt;- Back</a></p>
 <hr>
 {% for item in site.data.rngtool %}
-  <h4>{{ item.date }} - v1.{{ item.name }} ({{ item.build }}) - {% if item.src == true %}<a href="/source/RNGTool/1.X/RNGTool-v1.{{ item.name }}-source.zip">RNGTool-v1.{{ item.name }}-source.zip</a>{% else %}RNGTool-v1.{{ item.name }}-source.zip{% endif %} | <a href="/source/RNGTool/1.X/RNGTool-v1.{{ item.name }}-installer.dmg">Binaries</a> (Released as v1.{{ item.name }} build {{ item.build }})</h4>
-  <hr>
+  {% if item.major == 1 %}
+    <h4>{{ item.date }} - v1.{{ item.minor }} ({{ item.build }}) - {% if item.src == true %}<a href="/source/RNGTool/1.X/RNGTool-v1.{{ item.minor }}-source.zip">RNGTool-v1.{{ item.minor }}-source.zip</a>{% else %}RNGTool-v1.{{ item.minor }}-source.zip{% endif %} | <a href="/source/RNGTool/1.X/RNGTool-v1.{{ item.minor }}-installer.dmg">Binaries</a> (Released as v1.{{ item.minor }} build {{ item.build }})</h4>
+    <hr>
+  {% endif %}
 {% endfor %}
