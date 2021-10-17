@@ -8,7 +8,9 @@ layout: default
 <p>Versions that the code compiles for are marked by [M] macOS, [L] Linux, and [W] Windows</p>
 <p><a href="javascript:window.history.back()">&lt;- Back</a></p>
 <hr>
-{% for item in site.data.ncxcorelitev0 %}
-  <h4>{{ item.date }} - v0.{{ item.name }} - <a href="/source/NCX-Core-Lite/0.X/NCX-Core-Lite-v0.{{ item.name }}-source.zip">NCX-Core-Lite-v0.{{ item.name }}-source.zip</a> | {% if item.bin == true %}<a href="/source/NCX-Core-Lite/0.X/NCX-Core-v0.{{ item.name }}-bin.zip">Binaries</a>{% else %}Binaries{% endif %} [{{ item.platform }}] {% if item.bin == true %}(Released as v0.{{ item.name }}){% else %}(Never officially released, binaries unavailable){% endif %}</h4>
-  <hr>
+{% for item in site.data.ncxcorelite %}
+  {% if item.major == 0 %}
+    <h4>{{ item.date }} - v0.{{ item.minor }} - <a href="/source/NCX-Core-Lite/0.X/NCX-Core-Lite-v0.{{ item.minor }}-source.zip">NCX-Core-Lite-v0.{{ item.minor }}-source.zip</a> | {% if item.bin == true %}<a href="/source/NCX-Core-Lite/0.X/NCX-Core-v0.{{ item.minor }}-bin.zip">Binaries</a>{% else %}Binaries{% endif %} [{{ item.platform }}] {% if item.bin == true %}(Released as v0.{{ item.minor }}){% else %}(Never officially released, binaries unavailable){% endif %}</h4>
+    <hr>
+  {% endif %}
 {% endfor %}

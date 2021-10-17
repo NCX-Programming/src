@@ -1,8 +1,12 @@
-- name: 1
+- name: 0.1
+  major: 0
+  minor: 1
   date: 2021-03-06
   platform: M, L
   bin: false
-- name: 2
+- name: 0.2
+  major: 0
+  minor: 2
   date: 2021-03-22
   platform: M, L
   bin: false
