@@ -52,3 +52,9 @@
   date: 2021-10-16
   build: 154
   src: true
+- name: 1.8
+  major: 1
+  minor: 8
+  date: 2021-11-26
+  build: 161
+  src: true
