@@ -58,3 +58,9 @@
   date: 2021-11-26
   build: 161
   src: true
+- name: 1.8.8
+  major: 1
+  minor: 8.1
+  date: 2021-12-20
+  build: 166
+  src: true
